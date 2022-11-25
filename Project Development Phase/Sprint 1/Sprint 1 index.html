@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Virtual Eye</title>
+         <!-- Cool Google Fonts -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> Virtual Eye </h2>
+                </div>
+
+                <div class="navigation" style="display: flex;justify-content: space-around;padding:20px">
+                    <div class ="nav_object">
+                        <h2 class="form_options first_option" onclick="showLogin()">Login</h2>
+                    </div>
+                    <div>
+                        <h2 class="form_options" onclick="showRegister()">Register</h2>
+                    </div>
+                </div>
+
+                <div id="form_content_container0" >
+                    <div id="form_content_inner_container">
+                        <input type="text" id="loginemail" placeholder="Email">
+                        <input type="password" id="loginpassword" placeholder="Password">
+
+                        <div id="button_container">
+                            <button onclick="login()">Login</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="form_content_container1">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="Username" placeholder="Username">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="Password">
+
+                        <div id="button_container">
+                            <button onclick="register()">Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js">
+      
+    </script>
+
+</html>
